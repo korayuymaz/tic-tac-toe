@@ -1,0 +1,68 @@
+:root{
+  margin: auto;
+  background-color: #f9fafb;
+  --font-header: 3vw;
+  --font-text-header: 1.5vw;
+  --font-text-small: 1vw;
+  --font-text-smaller: 0.8vw;
+
+  --font-color: #111827;
+
+  --font-family: 'Roboto', sans-serif;
+
+  font-family: var(--font-family);
+  color: var(--font-color)
+}
+
+.container{
+  margin-top: 10vh;
+  margin: auto;
+  width: 80vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.3fr 0.6fr;
+  gap: 20px;
+}
+
+.header{
+  text-align: center;
+}
+
+.header a{
+  font-size: var(--font-header);
+  font-family: var(--font-family);
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.players{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: var(--font-text-header);
+  text-align: center;
+}
+
+.gameboard{
+  margin: auto;
+  width: 30vw;
+  height: 30vw;
+  background-color: #9ca3af;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: none;
+  border-radius: 10px;
+}
+
+.gameboard button{
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 10px;
+}
+
+.gameboard button:hover{
+  background-color: #d1d5db;
+}
