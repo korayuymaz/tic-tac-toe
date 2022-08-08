@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 0.3fr 0.6fr;
-  gap: 20px;
+  gap: 2vh;
 }
 
 .header{
@@ -48,7 +48,6 @@
   margin: auto;
   width: 30vw;
   height: 30vw;
-  background-color: #9ca3af;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -61,8 +60,20 @@
   background-color: #e5e7eb;
   border: none;
   border-radius: 10px;
+  font-size: var(--font-header);
 }
 
 .gameboard button:hover{
   background-color: #d1d5db;
+}
+
+.players > div{
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 70px;
+}
+
+.player-turn{
+  background-color: #d4d4d8;
 }
